@@ -1,0 +1,20 @@
+{
+  "name": "echochat-lite",
+  "version": "0.1.0",
+  "description": "EchoChat (NeurIPS'26) 的推理期实现：级联门控奖励 + 步骤级信用分配(SDCA) + 根因定位，零依赖 Node",
+  "type": "module",
+  "main": "lib/rewards.mjs",
+  "bin": { "echochat": "./echochat.mjs" },
+  "files": ["lib", "dev", "cases", "echochat.mjs", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node dev/eq-test.mjs",
+    "audit": "node dev/credit-audit.mjs",
+    "sim": "node dev/sim-toy.mjs",
+    "demo": "node echochat.mjs cases/modal-conflict.json"
+  },
+  "keywords": ["empathy", "empathetic-dialogue", "credit-assignment", "sdca", "grpo", "reward-gating", "speechllm", "echochat"],
+  "repository": { "type": "git", "url": "git+https://github.com/Verchiel666/echochat-lite.git" },
+  "homepage": "https://github.com/Verchiel666/echochat-lite",
+  "bugs": "https://github.com/Verchiel666/echochat-lite/issues",
+  "license": "MIT"
+}
